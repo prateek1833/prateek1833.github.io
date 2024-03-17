@@ -203,7 +203,9 @@ input{
     transition-duration: 0.2s;
     transition-delay: 0.2s;
 }
-.infoContainer .pro p{
-    top: 2rem
+
+.infoContainer .pro h2{
+    color: white;
+    text-decoration: none;
 }
 
