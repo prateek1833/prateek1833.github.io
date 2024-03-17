@@ -1,0 +1,209 @@
+body {
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    background-image: url("1-0\ blue\ gif.gif");
+}
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    display: flex;
+}
+.sidebar {
+    background-color: rgba(84, 84, 84, 0.499);
+    width: 20vw;
+    height: 100vh;
+    border-radius: 1.5rem;
+}
+
+.sidebar nav {
+    padding: 45px;
+}
+
+.sidebar nav li {
+    list-style: none;
+    font-size: 2rem;
+    padding: 2rem 0;
+}
+
+.sidebar nav li a {
+    text-decoration: none;
+    color: white;
+}
+
+.main {
+    background-color: rgba(45, 45, 45, 0.449);
+    width: 80vw;
+    height: 100vh;
+    border-radius: 1rem;
+}
+
+
+.infoContainer {
+    position: relative;
+    background-color: rgba(53, 53, 53, 0.566);
+    height: 60vh;
+    width: 78vw;
+    margin: 9rem auto;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 1.5rem;
+}
+
+.devInfo{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0.75rem;
+}
+
+.hello {
+    font-size: 1.25rem;
+}
+
+.name {
+    font-size: 1.25rem;
+}
+
+.about {
+    font-size: 3rem;
+}
+
+button {
+    box-sizing: border-box;
+    appearance: none;
+    background-color: rgb(4, 48, 109);
+    border: 2px solid red;
+    border-radius: 1.8em;
+    color: red;
+    cursor: pointer;
+    display: flex;
+    align-self: center;
+    font-size: 0.75rem;
+    font-weight: 400;
+    line-height: 1;
+    margin: 20px;
+    padding: 1.2em 2.8em;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+
+    border-color: black;
+    color: #fff;
+    box-shadow: 0 0 4px 4px rgb(37, 114, 221), 0 0 0 0 rgb(70, 144, 248);
+    transition: all 150ms ease-in-out;
+}
+
+button:hover {
+    box-shadow: 0 0 10px 0 rgb(77, 77, 77) inset, 0 0 10px 4px rgb(30, 30, 30);
+}
+
+
+.devPic img{
+    height: 60vh;
+}
+.devPic img:hover{
+    height: 82vh;
+    transform: rotateZ('180deg');
+    transition-duration: 0.10s;
+    transition: all 0.1s ease;
+}
+
+.contactForm {
+    text-align: center;
+    background-color: rgba(53, 53, 53, 0.566);
+    width: 78vw;
+    margin: 9rem auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 1.5rem;
+    
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+.mb-3{
+    display: flex;
+    flex-direction: column;
+}
+.contactForm form div{
+    padding: 0.75rem ;
+    font-size: 2rem;
+}
+#emailHelp{
+    font-size: 0.5rem;
+}
+input{
+    height:2.5rem;
+    width: 76vw;
+}
+.check-box{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+@media (max-width:1000px) {
+    .sidebar{
+        transform: translate(-443px,0px);
+        position:absolute;
+    }
+}
+.hasburger{
+    height:2rem;
+    margin: 1rem 0px 0px 1rem;
+    position: absolute;
+}
+.cross{
+    height:2rem;
+    margin: 1rem 0px 0px 1rem;
+    position: absolute;
+}
+.infoContainer .pro{
+    width: 20vw;
+    background-color: rgb(61, 61, 61);
+    height:55vh;
+    border-radius: 1rem;
+    margin: auto;
+    opacity: 0.9;
+    padding: 0.25rem;
+    text-align: center;
+}
+.infoContainer .pro:hover{
+    width: 21vw;
+    background-color: rgb(61, 61, 61);
+    height:56vh;
+    border-radius: 1rem;
+    margin: auto;
+    padding: 0.25rem;
+    transition-duration: 0.3s;
+
+}
+.infoContainer .pro img{
+    width: 20vw;
+    height:27vh;
+    border-radius: 1rem 1rem 0 0;
+}
+.infoContainer .pro img:hover{
+    width: 21vw;
+    height:28vh;
+    border-radius: 1rem 1rem 0 0;
+    transition-duration: 0.2s;
+    transition-delay: 0.2s;
+}
+.infoContainer .pro p{
+    top: 2rem
+}
+
