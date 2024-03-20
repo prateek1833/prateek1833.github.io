@@ -220,39 +220,45 @@ input{
         justify-content: space-around;
     }
     .infoContainer{
-        height: 150vh;
+        height: 180vh;
         width: 95vw;
         flex-direction: column;
         text-align: center;
     }
     .sidebar{
         position: absolute;
-        width: 50vw;
+        width: 60vw;
         height: 250vh;
         background-color: rgba(45, 45, 45, 1);
         border: solid black;
         z-index: 2;
     }
+    .button{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        text-align: center;
+    }
     .infoContainer .pro{
-        width: 90vw;
+        width: 80vw;
         background-color: rgb(61, 61, 61);
         border-radius: 1rem;
     }
     .infoContainer .pro img{
-        width: 90vw;
+        width: 80vw;
         height:27vh;
         border-radius: 1rem 1rem 0 0;
         background-color: rgb(61, 61, 61);
 
     }
     .infoContainer .pro:hover{
-        width: 91vw;
+        width: 81vw;
         background-color: rgb(61, 61, 61);
         border-radius: 1rem;
         transition-duration: 0.3s;
     }
     .infoContainer .pro img:hover{
-        width: 91vw;
+        width: 81vw;
         height:28vh;
         border-radius: 1rem 1rem 0 0;
         transition-duration: 0.3s;
