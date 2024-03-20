@@ -51,7 +51,7 @@ body {
 
 
 .infoContainer {
-    position: relative;
+    /* position: relative; */
     background-color: rgba(53, 53, 53, 0.566);
     height: 60vh;
     width: 78vw;
@@ -160,20 +160,15 @@ input{
     flex-direction: row;
     padding: 0;
 }
-@media (max-width:1000px) {
-    .sidebar{
-        transform: translate(-443px,0px);
-        position:absolute;
-    }
-}
 .sidebarGo {
-    transform: translate(-443px,0px);
+    transform: translate(-50vw,0vh);
     position:absolute;
 }
 .hasburger{
     height:2rem;
     margin: 1rem 0px 0px 1rem;
     position: absolute;
+    z-index: 3;
 }
 .cross{
     height:2rem;
@@ -209,8 +204,7 @@ input{
     width: 21vw;
     height:28vh;
     border-radius: 1rem 1rem 0 0;
-    transition-duration: 0.2s;
-    transition-delay: 0.2s;
+    transition-duration: 0.3s;
 }
 
 .infoContainer .pro h2{
@@ -218,3 +212,48 @@ input{
     text-decoration: none;
 }
 
+
+@media (max-width:1000px) {
+    .main{
+        height: 250vh;
+        display: flex;
+        justify-content: space-around;
+    }
+    .infoContainer{
+        height: 200vh;
+        flex-direction: column;
+        text-align: center;
+    }
+    .sidebar{
+        position: absolute;
+        width: 50vw;
+        height: 250vh;
+        background-color: rgba(45, 45, 45, 1);
+        border: solid black;
+        z-index: 2;
+    }
+    .infoContainer .pro{
+        width: 66vw;
+        background-color: rgb(61, 61, 61);
+        border-radius: 1rem;
+    }
+    .infoContainer .pro img{
+        width: 66vw;
+        height:27vh;
+        border-radius: 1rem 1rem 0 0;
+        background-color: rgb(61, 61, 61);
+
+    }
+    .infoContainer .pro:hover{
+        width: 67vw;
+        background-color: rgb(61, 61, 61);
+        border-radius: 1rem;
+        transition-duration: 0.3s;
+    }
+    .infoContainer .pro img:hover{
+        width: 67vw;
+        height:28vh;
+        border-radius: 1rem 1rem 0 0;
+        transition-duration: 0.3s;
+    }
+}
