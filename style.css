@@ -220,7 +220,8 @@ input{
         justify-content: space-around;
     }
     .infoContainer{
-        height: 200vh;
+        height: 150vh;
+        width: 95vw;
         flex-direction: column;
         text-align: center;
     }
@@ -233,25 +234,25 @@ input{
         z-index: 2;
     }
     .infoContainer .pro{
-        width: 66vw;
+        width: 90vw;
         background-color: rgb(61, 61, 61);
         border-radius: 1rem;
     }
     .infoContainer .pro img{
-        width: 66vw;
+        width: 90vw;
         height:27vh;
         border-radius: 1rem 1rem 0 0;
         background-color: rgb(61, 61, 61);
 
     }
     .infoContainer .pro:hover{
-        width: 67vw;
+        width: 91vw;
         background-color: rgb(61, 61, 61);
         border-radius: 1rem;
         transition-duration: 0.3s;
     }
     .infoContainer .pro img:hover{
-        width: 67vw;
+        width: 91vw;
         height:28vh;
         border-radius: 1rem 1rem 0 0;
         transition-duration: 0.3s;
