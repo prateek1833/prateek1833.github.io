@@ -161,7 +161,7 @@ input{
     padding: 0;
 }
 .sidebarGo {
-    transform: translate(-50vw,0vh);
+    transform: translate(-60vw,0vh);
     position:absolute;
 }
 .hasburger{
@@ -262,5 +262,16 @@ input{
         height:28vh;
         border-radius: 1rem 1rem 0 0;
         transition-duration: 0.3s;
+    }
+    .contactForm{
+        width: 95vw;
+        display: flex;
+        justify-content: space-around;
+    }
+    .devPic img{
+        height: 82vh;
+        transform: rotateZ('180deg');
+        transition-duration: 0.10s;
+        transition: all 0.1s ease;
     }
 }
