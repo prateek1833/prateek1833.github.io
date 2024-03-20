@@ -3,7 +3,8 @@ body {
     font-weight: 400;
     font-style: normal;
     color: white;
-    background-image: url("1-0\ blue\ gif.gif");
+    /* background-image: url("1-0\ blue\ gif.gif"); */
+    background-color: black;
 }
 
 *{
@@ -20,7 +21,9 @@ body {
     width: 20vw;
     height: 100vh;
     border-radius: 1.5rem;
+    transition:transform 0.5s ease;
 }
+
 
 .sidebar nav {
     padding: 45px;
@@ -39,9 +42,11 @@ body {
 
 .main {
     background-color: rgba(45, 45, 45, 0.449);
-    width: 80vw;
+    width: 120vw;
     height: 100vh;
     border-radius: 1rem;
+    transition:transform 0.5s ease;
+
 }
 
 
@@ -160,6 +165,10 @@ input{
         transform: translate(-443px,0px);
         position:absolute;
     }
+}
+.sidebarGo {
+    transform: translate(-443px,0px);
+    position:absolute;
 }
 .hasburger{
     height:2rem;
