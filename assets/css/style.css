@@ -54,9 +54,9 @@ a:hover {
 }
 
 .box-shadow,
-.card-blog,
+.card-education,
 .work-box,
-.service-box,
+.skill-box,
 .paralax-mf {
   box-shadow: 0 13px 8px -10px rgba(0, 0, 0, 0.1);
 }
@@ -244,7 +244,7 @@ a:hover {
 .widget-tags ul,
 .widget-sidebar .list-sidebar,
 .box-comments .list-comments,
-.blog-wrapper .post-meta ul,
+.education-wrapper .post-meta ul,
 .list-ico,
 .socials ul {
   list-style: none;
@@ -861,9 +861,9 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
-# Services
+# Skills
 --------------------------------------------------------------*/
-.service-box {
+.skill-box {
   background-color: #fff;
   padding: 2.5rem 1.3rem;
   border-radius: 1rem;
@@ -871,38 +871,38 @@ a:hover {
   text-align: center;
 }
 
-.service-box:hover .ico-circle {
+.skill-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
   background-color: #0078ff;
   box-shadow: 0 0 0 10px #cde1f8;
 }
 
-.service-box .service-ico {
+.skill-box .skill-ico {
   margin-bottom: 1rem;
   color: #1e1e1e;
 }
 
-.service-box .ico-circle {
+.skill-box .ico-circle {
   transition: all 500ms ease;
   display: inline-flex;
   align-items: center;
   justify-content: center;
 }
 
-.service-box .ico-circle i {
+.skill-box .ico-circle i {
   line-height: 0;
   font-size: 40px;
 }
 
-.service-box .s-title {
+.skill-box .s-title {
   font-size: 1.4rem;
   text-transform: uppercase;
   text-align: center;
   padding: 0.4rem 0;
 }
 
-.service-box .s-description {
+.skill-box .s-description {
   color: #4e4e4e;
 }
 
@@ -937,7 +937,7 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
-# Portfolio
+# project
 --------------------------------------------------------------*/
 .work-box {
   margin-bottom: 3rem;
@@ -990,70 +990,6 @@ a:hover {
   font-size: 1.2rem;
 }
 
-/*--------------------------------------------------------------
-# Portfolio Details
---------------------------------------------------------------*/
-.portfolio-details {
-  padding-top: 40px;
-}
-
-.portfolio-details .portfolio-details-slider img {
-  width: 100%;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination {
-  margin-top: 20px;
-  position: relative;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet {
-  width: 12px;
-  height: 12px;
-  background-color: #fff;
-  opacity: 1;
-  border: 1px solid #0078ff;
-}
-
-.portfolio-details .portfolio-details-slider .swiper-pagination .swiper-pagination-bullet-active {
-  background-color: #0078ff;
-}
-
-.portfolio-details .portfolio-info {
-  padding: 30px;
-  box-shadow: 0px 0 30px rgba(78, 78, 78, 0.08);
-}
-
-.portfolio-details .portfolio-info h3 {
-  font-size: 22px;
-  font-weight: 700;
-  margin-bottom: 20px;
-  padding-bottom: 20px;
-  border-bottom: 1px solid #eee;
-}
-
-.portfolio-details .portfolio-info ul {
-  list-style: none;
-  padding: 0;
-  font-size: 15px;
-}
-
-.portfolio-details .portfolio-info ul li+li {
-  margin-top: 10px;
-}
-
-.portfolio-details .portfolio-description {
-  padding-top: 30px;
-}
-
-.portfolio-details .portfolio-description h2 {
-  font-size: 26px;
-  font-weight: 700;
-  margin-bottom: 20px;
-}
-
-.portfolio-details .portfolio-description p {
-  padding: 0;
-}
 
 /*--------------------------------------------------------------
 # Testimonials
@@ -1225,19 +1161,19 @@ a:hover {
 }
 
 /*--------------------------------------------------------------
-# Blog
+# education
 --------------------------------------------------------------*/
 @media (min-width: 767px) {
-  .card-blog {
+  .card-education {
     margin-bottom: 3rem;
   }
 }
 
-.card-blog .card-body {
+.card-education .card-body {
   position: relative;
 }
 
-.card-blog .card-category-box {
+.card-education .card-category-box {
   position: absolute;
   text-align: center;
   top: -16px;
@@ -1247,7 +1183,7 @@ a:hover {
   overflow: hidden;
 }
 
-.card-blog .card-category {
+.card-education .card-category {
   display: inline-block;
   color: #fff;
   padding: 0 15px 5px;
@@ -1256,7 +1192,7 @@ a:hover {
   border-radius: 4px;
 }
 
-.card-blog .card-category .category {
+.card-education .card-category .category {
   color: #fff;
   display: inline-block;
   text-transform: uppercase;
@@ -1265,27 +1201,27 @@ a:hover {
   margin-bottom: 0;
 }
 
-.card-blog .card-title {
+.card-education .card-title {
   font-size: 1.3rem;
   margin-top: 0.6rem;
 }
 
-.card-blog .card-description {
+.card-education .card-description {
   color: #4e4e4e;
 }
 
-.card-blog .post-author {
+.card-education .post-author {
   display: inline-block;
 }
 
-.card-blog .post-date {
+.card-education .post-date {
   color: #4e4e4e;
   display: inline-block;
   float: right;
 }
 
 /*--------------------------------------------------------------
-# Blog Single
+# education Single
 --------------------------------------------------------------*/
 .post-box,
 .form-comments,
@@ -1306,39 +1242,39 @@ a:hover {
   }
 }
 
-.blog-wrapper .article-title {
+.education-wrapper .article-title {
   font-size: 1.5rem;
 }
 
 @media (min-width: 768px) {
-  .blog-wrapper .article-title {
+  .education-wrapper .article-title {
     font-size: 1.9rem;
   }
 }
 
-.blog-wrapper .post-meta {
+.education-wrapper .post-meta {
   margin: 1rem 0;
 }
 
-.blog-wrapper .post-meta ul {
+.education-wrapper .post-meta ul {
   border-left: 4px solid #0078ff;
   margin-top: 1rem;
 }
 
-.blog-wrapper .post-meta ul li {
+.education-wrapper .post-meta ul li {
   display: inline-block;
   margin-left: 15px;
 }
 
-.blog-wrapper .post-meta ul a {
+.education-wrapper .post-meta ul a {
   color: #0078ff;
 }
 
-.blog-wrapper .post-meta ul span {
+.education-wrapper .post-meta ul span {
   color: #1e1e1e;
 }
 
-.blog-wrapper .blockquote {
+.education-wrapper .blockquote {
   border-left: 4px solid #0078ff;
   padding: 18px;
   font-style: italic;

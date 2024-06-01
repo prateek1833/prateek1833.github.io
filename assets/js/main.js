@@ -177,10 +177,10 @@
   }
 
   /**
-   * Initiate portfolio lightbox 
+   * Initiate project lightbox 
    */
-  const portfolioLightbox = GLightbox({
-    selector: '.portfolio-lightbox'
+  const projectLightbox = GLightbox({
+    selector: '.project-lightbox'
   });
 
   /**
@@ -202,9 +202,9 @@
   });
 
   /**
-   * Portfolio details slider
+   * project details slider
    */
-  new Swiper('.portfolio-details-slider', {
+  new Swiper('.project-details-slider', {
     speed: 400,
     loop: true,
     autoplay: {
