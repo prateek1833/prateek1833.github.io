@@ -1,11 +1,3 @@
-/**
-* Template Name: DevFolio
-* Template URL: https://bootstrapmade.com/devfolio-bootstrap-portfolio-html-template/
-* Updated: Mar 17 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 (function() {
   "use strict";
 
@@ -96,21 +88,6 @@
     onscroll(document, headerScrolled)
   }
 
-  /**
-   * Back to top button
-   */
-  let backtotop = select('.back-to-top')
-  if (backtotop) {
-    const toggleBacktotop = () => {
-      if (window.scrollY > 100) {
-        backtotop.classList.add('active')
-      } else {
-        backtotop.classList.remove('active')
-      }
-    }
-    window.addEventListener('load', toggleBacktotop)
-    onscroll(document, toggleBacktotop)
-  }
 
   /**
    * Mobile nav toggle
@@ -179,9 +156,6 @@
   /**
    * Initiate project lightbox 
    */
-  const projectLightbox = GLightbox({
-    selector: '.project-lightbox'
-  });
 
   /**
    * Testimonials slider
@@ -204,19 +178,6 @@
   /**
    * project details slider
    */
-  new Swiper('.project-details-slider', {
-    speed: 400,
-    loop: true,
-    autoplay: {
-      delay: 5000,
-      disableOnInteraction: false
-    },
-    pagination: {
-      el: '.swiper-pagination',
-      type: 'bullets',
-      clickable: true
-    }
-  });
 
   /**
    * Preloader
