@@ -1,680 +1,572 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prateek Kumar — Full-Stack Software Engineer</title>
+  <meta name="description" content="Prateek Kumar is a Full-Stack Software Engineer specializing in backend systems, APIs, and production Generative AI applications. B.Tech, NIT Srinagar.">
+  <meta name="keywords" content="Prateek Kumar, Software Engineer, Backend Engineer, GenAI Engineer, RAG, LangChain, Full Stack Developer, NIT Srinagar">
+  <meta name="author" content="Prateek Kumar">
 
-  <title>Prateek Portfolio</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Prateek Kumar — Full-Stack Software Engineer">
+  <meta property="og:description" content="Building scalable web applications, backend systems, APIs, and AI-powered solutions.">
+  <meta property="og:image" content="assets/images/og-cover.jpg">
+  <meta property="og:url" content="https://prateek1833.github.io/">
 
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Prateek Kumar — Full-Stack Software Engineer">
+  <meta name="twitter:description" content="Building scalable web applications, backend systems, APIs, and AI-powered solutions.">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
 
-  <link rel="icon" type="image/x-icon" href="assets/img/Profile.jpg">
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 
+  <!-- Schema.org -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Prateek Kumar",
+    "jobTitle": "Full-Stack Software Engineer",
+    "url": "https://prateek1833.github.io/",
+    "email": "kumarprateek1833@gmail.com",
+    "sameAs": [
+      "https://github.com/prateek1833",
+      "https://www.linkedin.com/in/prateek-kumar-342a98312/",
+      "https://leetcode.com/u/Prateek_Kumar_24/"
+    ],
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "National Institute of Technology, Srinagar"
+    },
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Nexturn"
+    }
+  }
+  </script>
 </head>
-
 <body>
 
-  <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top">
-    <div class="container d-flex align-items-center justify-content-between">
+  <a href="#main" class="skip-link">Skip to content</a>
 
-      <h1 class="logo"><a href="index.html">Portfolio</a></h1>
+  <!-- ===== Nav ===== -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#top" class="nav-logo">PK<span class="nav-logo-dot">.</span></a>
 
-      <nav id="navbar" class="navbar">
-        <ul>
-          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
-          <li><a class="nav-link scrollto " href="#education">Education</a></li>
-          <li><a class="nav-link scrollto" href="#skills">Skill</a></li>
-          <li><a class="nav-link scrollto " href="#work">Projects</a></li>
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#contact">Contact</a>
+      </nav>
 
-    </div>
-  </header><!-- End Header -->
-
-  <!-- ======= Hero Section ======= -->
-  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/Prateek\ lal\ kila2.jpg)">
-    <div class="overlay-itro"></div>
-    <div class="hero-content display-table">
-      <div class="table-cell">
-        <div class="container">
-          <!--<p class="display-6 color-d">Hello, world!</p>-->
-          <h1 class="hero-title mb-4">I am Prateek Kumar</h1>
-          <p class="hero-subtitle"><span class="typed"
-              data-typed-items="Programmer, Full Stack developer, Video Editor, and an Engineer"></span></p>
-          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
-        </div>
+      <div class="nav-actions">
+        <a href="assets/Prateek_Kumar_Resume.pdf" class="btn btn-ghost btn-sm" download>Resume</a>
+        <a href="#contact" class="btn btn-primary btn-sm">Get in touch</a>
       </div>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
     </div>
-  </div><!-- End Hero Section -->
+  </header>
+
+  <!-- ===== Mobile menu ===== -->
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="#about">About</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#achievements">Achievements</a>
+    <a href="#contact">Contact</a>
+    <a href="assets/Prateek_Kumar_Resume.pdf" class="btn btn-primary" download>Download Resume</a>
+  </div>
 
   <main id="main">
+    <!-- ===== Hero ===== -->
+    <section class="hero" id="top">
+      <div class="hero-bg" aria-hidden="true">
+        <svg class="pipeline-svg" viewBox="0 0 1200 700" preserveAspectRatio="xMidYMid slice">
+          <defs>
+            <linearGradient id="lineGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+              <stop offset="0%" stop-color="#5B8CFF" stop-opacity="0.55"/>
+              <stop offset="100%" stop-color="#4FD8C4" stop-opacity="0.55"/>
+            </linearGradient>
+          </defs>
+          <!-- pipeline path: Client -> API -> Vector Store -> LLM -> Response -->
+          <path id="pipePath" d="M -50 560 C 150 560, 180 420, 320 420 S 480 250, 620 250 S 780 480, 920 480 S 1080 200, 1260 200"
+                fill="none" stroke="url(#lineGrad)" stroke-width="1.5" stroke-dasharray="6 10"/>
+          <g class="pipe-nodes" fill="#0A0E16" stroke="#5B8CFF" stroke-width="1.5">
+            <circle cx="-50" cy="560" r="5"/>
+            <circle cx="320" cy="420" r="5"/>
+            <circle cx="620" cy="250" r="5"/>
+            <circle cx="920" cy="480" r="5"/>
+            <circle cx="1260" cy="200" r="5"/>
+          </g>
+        </svg>
+      </div>
 
-    <!-- ======= About Section ======= -->
-    <section id="about" class="about-mf sect-pt4 route">
+      <div class="hero-inner">
+        <p class="eyebrow mono">status: <span class="status-dot"></span> available for full-time roles &amp; freelance projects</p>
+
+        <h1 class="hero-title">
+          Prateek Kumar
+        </h1>
+        <p class="hero-role">Full-Stack Software Engineer</p>
+
+        <p class="hero-sub">
+          I build scalable web applications, backend systems, APIs, and AI-powered
+          solutions — from production RAG pipelines to full-stack platforms.
+        </p>
+
+        <div class="hero-meta mono">
+          <span>Data &amp; GenAI Engineer @ Nexturn</span>
+          <span class="sep">·</span>
+          <span>1+ Year Experience</span>
+          <span class="sep">·</span>
+          <span>Bengaluru, India</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="#contact" class="btn btn-primary">Hire Me</a>
+          <a href="assets/Prateek_Kumar_Resume.pdf" class="btn btn-ghost" download>Download Resume</a>
+          <a href="#projects" class="btn btn-text">View Projects →</a>
+        </div>
+
+        <div class="hero-socials">
+          <a href="https://github.com/prateek1833" target="_blank" rel="noopener" aria-label="GitHub">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.79-.25.79-.55v-2.15c-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.78 2.7 1.26 3.36.97.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.15v3.19c0 .31.21.66.8.55A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/prateek-kumar-342a98312/" target="_blank" rel="noopener" aria-label="LinkedIn">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.02-3.03-1.85-3.03-1.85 0-2.14 1.45-2.14 2.94v5.66H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.36-1.85 3.6 0 4.27 2.37 4.27 5.45v6.29ZM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.8 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+          </a>
+          <a href="https://leetcode.com/u/Prateek_Kumar_24/" target="_blank" rel="noopener" aria-label="LeetCode">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.48 23.4c-.63.63-1.47.98-2.36.98-.9 0-1.73-.35-2.36-.98L2.83 17.5a3.31 3.31 0 0 1-.98-2.37c0-.9.35-1.74.98-2.37L8.76 6.9a3.31 3.31 0 0 1 2.36-.97c.9 0 1.73.35 2.36.97l3.32 3.32a1.11 1.11 0 1 1-1.57 1.57l-3.32-3.32a1.11 1.11 0 0 0-1.57 0l-5.94 5.94a1.11 1.11 0 0 0 0 1.57l5.94 5.94a1.11 1.11 0 0 0 1.57 0l3.32-3.32a1.11 1.11 0 1 1 1.57 1.57L13.48 23.4Zm7.3-6.28H10.65a1.11 1.11 0 1 1 0-2.22h10.13a1.11 1.11 0 1 1 0 2.22Z"/></svg>
+          </a>
+          <a href="mailto:kumarprateek1833@gmail.com" aria-label="Email">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M2 5.5A1.5 1.5 0 0 1 3.5 4h17A1.5 1.5 0 0 1 22 5.5v13a1.5 1.5 0 0 1-1.5 1.5h-17A1.5 1.5 0 0 1 2 18.5v-13Zm2.2.5 7.8 6.24L19.8 6H4.2ZM4 8.15V18h16V8.15l-8 6.4-8-6.4Z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <a href="#about" class="scroll-cue" aria-hidden="true">
+        <span></span>
+      </a>
+    </section>
+
+    <!-- ===== About ===== -->
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <div class="about-media">
+          <div class="photo-frame">
+            <img src="assets/images/profile.jpeg" alt="Prateek Kumar" class="profile-photo" onerror="this.parentElement.classList.add('photo-placeholder')">
+          </div>
+          <div class="about-card mono">
+            <div class="about-card-row"><span>base</span><span>Bengaluru, IN</span></div>
+            <div class="about-card-row"><span>role</span><span>Data &amp; GenAI Engineer</span></div>
+            <div class="about-card-row"><span>edu</span><span>NIT Srinagar '25</span></div>
+          </div>
+        </div>
+
+        <div class="about-content">
+          <p class="eyebrow mono">/about</p>
+          <h2 class="section-title">From debugging circuits to building GenAI pipelines.</h2>
+
+          <div class="about-text">
+            <p>I started my B.Tech in Electronics &amp; Communication at NIT Srinagar in 2021, and along the way found
+              that I liked writing software more than reading datasheets. By my final year, that meant late nights on
+              LeetCode — I've since worked through 500+ DSA problems — and an internship at Nexturn that turned into a
+              full-time offer the moment I graduated.</p>
+
+            <p>What started as an internship building a document Q&amp;A pipeline turned into my full-time focus: I now
+              work as a Data &amp; GenAI Engineer, spending my time between two worlds that most people treat as separate
+              — traditional backend/data engineering (SQL, ETL pipelines, Spark and Hive) and applied Generative AI
+              (LangChain, FAISS, retrieval-augmented generation with OpenAI's APIs).</p>
+
+            <p>The problems I enjoy most sit at the intersection: making retrieval accurate enough to trust, keeping
+              data pipelines reliable at scale, and building APIs that don't fall over when someone finally puts them in
+              front of real users. I'd describe myself as an engineer who's equally comfortable optimizing a SQL query
+              and debugging a prompt template — and who'd rather ship something reliable than something flashy.</p>
+          </div>
+
+          <div class="about-highlights">
+            <div class="highlight">
+              <span class="highlight-num mono">01</span>
+              <div>
+                <h4>Backend &amp; Data</h4>
+                <p>REST APIs, SQL, ETL pipelines on Spark/Hive/Hadoop</p>
+              </div>
+            </div>
+            <div class="highlight">
+              <span class="highlight-num mono">02</span>
+              <div>
+                <h4>Applied GenAI</h4>
+                <p>RAG systems, vector search, LLM application engineering</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== Experience ===== -->
+    <section class="experience" id="experience">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="box-shadow-full">
-              <div class="row">
-                <div class="col-md-6">
-                  <div class="row">
-                    <div class="col-sm-6 col-md-5">
-                      <div class="about-img">
-                        <img src="assets/img/Profile.jpg" class="img-fluid rounded b-shadow-a" alt="">
-                      </div>
-                    </div>
-                    <div class="col-sm-6 col-md-7">
-                      <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span>Prateek Kumar</span></p>
-                        <p><span class="title-s">Birthday: </span> <span>17.01.2001</span></p>
-                        <p><span class="title-s">Email: </span> <span>kumarprateek1833@gmail.com</span></p>
-                        <p><span class="title-s">Phone: </span> <span>6391837992</span></p>
-                      </div>
-                    </div>
-                  </div>
+        <p class="eyebrow mono">/experience</p>
+        <h2 class="section-title">Where I've worked.</h2>
 
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-marker">
+              <span class="timeline-dot"></span>
+              <span class="timeline-line"></span>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-head">
+                <div>
+                  <h3>Data &amp; GenAI Engineer</h3>
+                  <p class="timeline-company">Nexturn · Bengaluru, India</p>
                 </div>
-                <div class="col-md-6">
-                  <div class="about-me pt-4 pt-md-0">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        About me
-                      </h5>
-                    </div>
-                    <p class="lead">
-                      I am a dedicated and passionate engineer with a passion for learning and mastering new
-                      technologies.
-                    </p>
-                    <p class="lead">
-                      My goal is to use this knowledge to create innovative solutions to real problems.
-                    </p>
-                    <p class="lead">
-                      I enjoy using what I've learned to solve real-world problems and am always eager to improve
-                      my skills and make a difference through my work.
-                    </p>
-                    <p class="lead">
-                      Whether through collaborative work or independent research, I am committed to using my technical
-                      skills to create meaningful and effective solutions.
-                    </p>
-                  </div>
-                </div>
+                <span class="timeline-date mono">Sep 2024 — Present</span>
+              </div>
+              <p class="timeline-note">Joined as an intern during my final year at NIT Srinagar; converted to a
+                full-time role upon graduating in 2025.</p>
+              <ul class="timeline-list">
+                <li>Designed and built a Retrieval-Augmented Generation (RAG) application using LangChain and FAISS,
+                  enabling domain-specific question answering over unstructured documents.</li>
+                <li>Engineered the document ingestion pipeline end-to-end — chunking, embedding generation, and
+                  vector indexing — to improve retrieval accuracy for multi-turn conversational queries.</li>
+                <li>Integrated OpenAI APIs into the retrieval pipeline and iterated on prompt templates through
+                  repeated testing to improve answer relevance for domain-specific queries.</li>
+                <li>Authored and optimized SQL queries (joins, aggregations, CTEs, window functions) for structured
+                  data transformation and business reporting.</li>
+                <li>Built and debugged ETL pipelines to ingest, clean, and transform structured datasets using
+                  Hadoop, Hive, and Spark.</li>
+              </ul>
+              <div class="tag-row">
+                <span class="tag">LangChain</span>
+                <span class="tag">FAISS</span>
+                <span class="tag">OpenAI API</span>
+                <span class="tag">Spark</span>
+                <span class="tag">Hive</span>
+                <span class="tag">SQL</span>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section><!-- End About Section -->
+    </section>
 
-    <!-- ======= Education Section ======= -->
-    <section id="education" class="education-mf sect-pt4 route">
+    <!-- ===== Projects ===== -->
+    <section class="projects" id="projects">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Education
-              </h3>
-              <div class="line-mf"></div>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6">
-            <div class="card card-education">
-              <div class="card-img">
-                <a href="https://navodaya.gov.in/nvs/en/Home1"><img src="assets/img/JNV-BASTI.jpg_940552569.jpg" alt=""
-                    class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">School</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a
-                    href="https://navodaya.gov.in/nvs/nvs-school/BASTI/en/about_us/About-JNV/">Jawahar Navodaya
-                    Vidyalaya, Rudhauli- Basti</a></h3>
-                <p class="card-description">
-                  I completed my 10th and 12th classes from the renowned Jawahar Navodaya Vidyalaya, achieving 80.8% in
-                  my 12th-grade exams.</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="card card-education">
-              <div class="card-img">
-                <a href="https://nitsri.ac.in/"><img src="assets/img/main_faculty_block.jpg" alt="" class="img-fluid"></a>
-              </div>
-              <div class="card-body">
-                <div class="card-category-box">
-                  <div class="card-category">
-                    <h6 class="category">College</h6>
-                  </div>
-                </div>
-                <h3 class="card-title"><a href="https://nitsri.ac.in/">National Institute Of Technology, Srinagar</a>
-                </h3>
-                <p class="card-description">
-                  I am currently pursuing my BTech from the renowned National Institute of Technology (NIT) Srinagar,
-                  and my current CGPA is 7.593.
-                </p>
-              </div>
-            </div>
+        <p class="eyebrow mono">/projects</p>
+        <h2 class="section-title">Things I've built.</h2>
 
-          </div>
+        <div class="project-list">
+
+          <!-- Project 1: RAG -->
+          <article class="project-card">
+            <div class="project-visual" data-label="RAG Pipeline">
+              <div class="visual-placeholder">
+                <span class="mono">assets/images/projects/rag-qa.jpg</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-head">
+                <h3>RAG-Based Document Question Answering System</h3>
+                <div class="project-links">
+                  <a href="https://github.com/prateek1833/RAG" target="_blank" rel="noopener" aria-label="GitHub repository">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.57.1.79-.25.79-.55v-2.15c-3.2.7-3.88-1.36-3.88-1.36-.52-1.34-1.28-1.7-1.28-1.7-1.04-.72.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.78 2.7 1.26 3.36.97.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.7 0-1.26.45-2.29 1.19-3.1-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.8 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.76.12 3.05.74.81 1.18 1.84 1.18 3.1 0 4.43-2.7 5.4-5.27 5.69.42.36.78 1.07.78 2.15v3.19c0 .31.21.66.8.55A10.52 10.52 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5Z"/></svg>
+                  </a>
+                </div>
+              </div>
+              <p class="project-desc">A Retrieval-Augmented Generation application that lets users ask natural
+                language questions about their own documents and get context-aware answers. Handles document
+                processing and chunking with LangChain, generates embeddings with Sentence Transformers, retrieves
+                relevant context via a FAISS vector store, and uses an LLM to generate grounded responses — all
+                through an interactive Streamlit interface for upload and querying.</p>
+              <div class="tag-row">
+                <span class="tag">LangChain</span>
+                <span class="tag">Sentence Transformers</span>
+                <span class="tag">FAISS</span>
+                <span class="tag">Streamlit</span>
+                <span class="tag">Python</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: Web2App -->
+          <article class="project-card">
+            <div class="project-visual" data-label="Web → App Pipeline">
+              <div class="visual-placeholder">
+                <span class="mono">assets/images/projects/web2app.jpg</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-head">
+                <h3>Web2App — Website to Mobile App Generation Pipeline</h3>
+                <div class="project-links project-links-pending mono">repo pending</div>
+              </div>
+              <p class="project-desc">An end-to-end pipeline that converts a website URL into a functional React
+                Native (Expo) mobile app. Extracts UI structure via Playwright and generates native components
+                through template-based code generation. Includes an LLM-based evaluator that scores generated app
+                quality, with a human-in-the-loop review layer backed by SQLite to catch and correct generation
+                errors before deployment.</p>
+              <div class="tag-row">
+                <span class="tag">Python</span>
+                <span class="tag">Streamlit</span>
+                <span class="tag">Playwright</span>
+                <span class="tag">React Native</span>
+                <span class="tag">Expo</span>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: ServiceNow -->
+          <article class="project-card">
+            <div class="project-visual" data-label="Security Dashboard">
+              <div class="visual-placeholder">
+                <span class="mono">assets/images/projects/servicenow-els.jpg</span>
+              </div>
+            </div>
+            <div class="project-body">
+              <div class="project-head">
+                <h3>ServiceNow SecOps — Exploitable Likelihood Score (ELS) Dashboard</h3>
+                <div class="project-links project-links-pending mono">internal tool</div>
+              </div>
+              <p class="project-desc">A vulnerability-prioritization tool that computes an Exploitable Likelihood
+                Score from CVSS and threat data, backed by a custom ServiceNow table to manage the underlying
+                application data. Built UI Builder pages to visualize ELS scores, vulnerability groupings, and
+                Security Incident records for security analysts.</p>
+              <div class="tag-row">
+                <span class="tag">ServiceNow</span>
+                <span class="tag">UI Builder</span>
+                <span class="tag">JavaScript</span>
+              </div>
+            </div>
+          </article>
+
         </div>
       </div>
-    </section><!-- End education Section -->
+    </section>
 
-    <!-- ======= Skill Section ======= -->
-    <section id="skills" class="skills-mf pt-5 route">
+    <!-- ===== Skills ===== -->
+    <section class="skills" id="skills">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Skills
-              </h3>
-              <div class="line-mf"></div>
-            </div>
+        <p class="eyebrow mono">/skills</p>
+        <h2 class="section-title">What I work with.</h2>
+
+        <div class="skills-grid">
+          <div class="skill-group">
+            <h4 class="mono">Languages</h4>
+            <div class="tag-row"><span class="tag">Python</span><span class="tag">JavaScript</span><span class="tag">Java</span><span class="tag">SQL</span></div>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-4">
-            <div class="skill-box">
-              <div class="skill-ico">
-                <span class="ico-circle"><i class="bi bi-terminal"></i></span>
-              </div>
-              <div class="skill-content">
-                <h2 class="s-title">Coding Languages</h2>
-                <p class="s-description text-center">
-                  C, C++, Java, Python, JavaScript
-                </p>
-              </div>
-            </div>
+          <div class="skill-group">
+            <h4 class="mono">Backend &amp; APIs</h4>
+            <div class="tag-row"><span class="tag">REST APIs</span><span class="tag">Node.js</span><span class="tag">Express.js</span><span class="tag">OOP</span></div>
           </div>
-          <div class="col-md-4">
-            <div class="skill-box">
-              <div class="skill-ico">
-                <span class="ico-circle"><i class="bi bi-code-slash"></i>
-                  </i></span>
-              </div>
-              <div class="skill-content">
-                <h2 class="s-title">Frontend</h2>
-                <p class="s-description text-center">
-                  HTML, CSS, JavaScript
-                </p>
-              </div>
-            </div>
+          <div class="skill-group">
+            <h4 class="mono">Data Engineering</h4>
+            <div class="tag-row"><span class="tag">Apache Spark</span><span class="tag">Apache Hive</span><span class="tag">Hadoop</span><span class="tag">ETL Pipelines</span><span class="tag">Data Transformation</span></div>
           </div>
-          <div class="col-md-4">
-            <div class="skill-box">
-              <div class="skill-ico">
-                <span class="ico-circle"><i class="bi bi-database database-icon"></i></span>
-              </div>
-              <div class="skill-content">
-                <h2 class="s-title">DataBases</h2>
-                <p class="s-description text-center">
-                  MongoDB, SQL
-                </p>
-              </div>
-            </div>
+          <div class="skill-group">
+            <h4 class="mono">Generative AI</h4>
+            <div class="tag-row"><span class="tag">LangChain</span><span class="tag">FAISS</span><span class="tag">RAG</span><span class="tag">Vector Embeddings</span><span class="tag">Semantic Search</span><span class="tag">Prompt Engineering</span><span class="tag">OpenAI API</span></div>
           </div>
-          <div class="col-md-4">
-            <div class="skill-box">
-              <div class="skill-ico">
-                <span class="ico-circle"><i class="bi bi-file-code"></i></span>
-              </div>
-              <div class="skill-content">
-                <h2 class="s-title">Backend</h2>
-                <p class="s-description text-center">
-                  Node, Express, React
-                </p>
-              </div>
-            </div>
+          <div class="skill-group">
+            <h4 class="mono">Databases</h4>
+            <div class="tag-row"><span class="tag">MongoDB</span><span class="tag">Query Optimization</span><span class="tag">Indexing</span></div>
           </div>
-          <div class="col-md-4">
-            <div class="skill-box">
-              <div class="skill-ico">
-                <span class="ico-circle"><i class="bi bi-laptop"></i></span>
-              </div>
-              <div class="skill-content">
-                <h2 class="s-title">CS Fundamental</h2>
-                <p class="s-description text-center">
-                  OOPs, DBMS, Operating System
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="skill-box">
-              <div class="skill-ico">
-                <span class="ico-circle"><i class="bi bi-tools"></i></span>
-              </div>
-              <div class="skill-content">
-                <h2 class="s-title">Software and Tools</h2>
-                <p class="s-description text-center">
-                  Git, Github, VS-Code, LTSpice, MS-Office
-                </p>
-              </div>
-            </div>
+          <div class="skill-group">
+            <h4 class="mono">Tools &amp; Platforms</h4>
+            <div class="tag-row"><span class="tag">Git</span><span class="tag">GitHub</span><span class="tag">Linux</span></div>
           </div>
         </div>
       </div>
-    </section><!-- End skills Section -->
+    </section>
 
-
-
-    <!-- ======= Counter Section ======= -->
-    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/nitsri.JPG)">
-      <div class="overlay-mf"></div>
-      <div class="container position-relative">
-        <div class="row">
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-lightbulb"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="400" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">+ DSA Questions Solved on LeetCode</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-star"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="1488" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">Rating on LeetCode</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-award"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="2" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">LeetCode Badges won</span>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-3 col-lg-3">
-            <div class="counter-box pt-4 pt-md-0">
-              <div class="counter-ico">
-                <span class="ico-circle"><i class="bi bi-clipboard-check"></i></span>
-              </div>
-              <div class="counter-num">
-                <p data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1"
-                  class="counter purecounter"></p>
-                <span class="counter-text">Projects made</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div><!-- End Counter Section -->
-
-    <!-- ======= Project Section ======= -->
-    <section id="work" class="project-mf sect-pt4 route">
+    <!-- ===== Achievements ===== -->
+    <section class="achievements" id="achievements">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="title-box text-center">
-              <h3 class="title-a">
-                Projects
-              </h3>
-              <p class="subtitle-a">
-                There are some projects made by me during my Graduation.
-              </p>
-              <div class="line-mf"></div>
-            </div>
+        <p class="eyebrow mono">/achievements</p>
+        <h2 class="section-title">Track record.</h2>
+
+        <div class="stat-grid">
+          <div class="stat-box">
+            <span class="stat-num mono" data-count="500">0</span><span class="stat-plus mono">+</span>
+            <p>DSA problems solved on LeetCode</p>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num mono" data-count="1488">0</span>
+            <p>LeetCode contest rating</p>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num mono" data-count="2">0</span>
+            <p>LeetCode badges earned</p>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num mono" data-count="1">0</span><span class="stat-plus mono">+</span>
+            <p>Year of production engineering experience</p>
           </div>
         </div>
-        <div class="row">
-        <div class="col-md-4">
-            <div class="work-box">
-              <a href="http://apnanagar.onrender.com" data-gallery="projectGallery" class="project-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/ApnaNagar.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Apna Nagar Website (PWA)</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">HTML/CSS/JavaScript, Node.js,Express.js, MongoDB</span> / <span
-                        class="w-date">15 Apr. 2024</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://github.com/prateek1833/ApnaNagar"> <span style="color: black;"
-                          class="bi bi-github"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="https://prateek1833.github.io/" data-gallery="projectGallery" class="project-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/portfolio_home.jpg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Portfolio Website</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">HTML, CSS, JavaScript</span> / <span class="w-date">1 June. 2024</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://github.com/prateek1833/prateek1833.github.io"> <span style="color: black;"
-                          class="bi bi-github"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="https://prateek1833.github.io/Spotify-Frontend/" data-gallery="projectGallery"
-                class="project-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/spotify.jpeg" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Frontend : Spotify Clone</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">HTML, CSS, JavaScript</span> / <span class="w-date">10 Jan. 2024</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a href="https://github.com/prateek1833/Spotify-Frontend"> <span style="color: black;"
-                          class="bi bi-github"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-          <div class="col-md-4">
-            <div class="work-box">
-              <a href="https://github.com/prateek1833/Non-Destructive-Method-of-Fruit-Spoilage-Detection/blob/main/Report%205.pdf"
-                data-gallery="projectGallery" class="project-lightbox">
-                <div class="work-img">
-                  <img src="assets/img/IIT_Kanpur_Logo.svg.png" alt="" class="img-fluid">
-                </div>
-              </a>
-              <div class="work-content">
-                <div class="row">
-                  <div class="col-sm-8">
-                    <h2 class="w-title">Non-destructive method for fruit spoilage Detection</h2>
-                    <div class="w-more">
-                      <span class="w-ctegory">Internship at IIT Kanpur</span> / <span class="w-date">10
-                        Feb. 2024</span>
-                    </div>
-                  </div>
-                  <div class="col-sm-4">
-                    <div class="w-like">
-                      <a
-                        href="https://www.linkedin.com/posts/prateek-kumar09_iitkanpur-ece-internship-activity-7162348108302016512-f24r?utm_source=share&utm_medium=member_desktop">
-                        <span style="color: black;" class="bi bi-github"></span></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
 
-
+        <div class="edu-card">
+          <div>
+            <h4>National Institute of Technology, Srinagar</h4>
+            <p class="text-dim">B.Tech in Electronics &amp; Communication Engineering</p>
+            <p class="text-faint mono">Coursework: Data Structures &amp; Algorithms, DBMS, Operating Systems, OOP</p>
+          </div>
+          <span class="edu-date mono">2021 — 2025</span>
         </div>
       </div>
-    </section><!-- End project Section -->
+    </section>
 
-    <!-- ======= Testimonials Section ======= -->
-    <div class="testimonials paralax-mf bg-image" style="background-image: url(assets/img/nits.jpg)">
-      <div class="overlay-mf"></div>
+    <!-- ===== Why hire me ===== -->
+    <section class="strengths" id="why">
       <div class="container">
-        <div class="row">
-          <div class="col-md-12">
+        <p class="eyebrow mono">/why-hire-me</p>
+        <h2 class="section-title">What I bring to a team.</h2>
 
-            <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
-              <div class="swiper-wrapper">
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <a href="https:\\mdsaifin.github.io"><img style="height: 200px;" src="assets/img/saif.jpg" alt=""
-                          class="rounded-circle b-shadow-a"></a>
-                      <span class="author">Md. Saif </span>
-                    </div>
-                    <div class="content-test">
-                      <p>
-                        (CR-ECE)
-                      </p>
-                      <p class="description lead">
-                        As our Class Representative, I’ve worked closely with Prateek Kumar. 
-                        Prateek is dedicated, creative, and a great team player. They balance academics and extracurriculars exceptionally well, always approaching challenges with a positive attitude. 
-                        Prateek is a brilliant student and a supportive peer who has made a lasting impact on our class.
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img style="height: 200px;" src="assets/img/balram.jpg"
-                          alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Balram Nishad </span>
-                    </div>
-                    <div class="content-test">
-                      <p>
-                        (fellow intern at IIT Kanpur)
-                      </p>
-                      <p class="description lead">
-                        Prateek Kumar is an exceptionally skilled coder, whose problem-solving abilities and dedication
-                        to technology are truly impressive. His passion for bodybuilding reflects his discipline and
-                        commitment, while his storytelling talent showcases his creativity and ability to captivate
-                        audiences.
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-
-                <div class="swiper-slide">
-                  <div class="testimonial-box">
-                    <div class="author-test">
-                      <img style="height: 200px;" src="assets/img/nitendra.jpg"
-                          alt="" class="rounded-circle b-shadow-a">
-                      <span class="author">Nitendra Kumar </span>
-                    </div>
-                    <div class="content-test">
-                      <p>
-                        (CR-ECE, fellow intern at IIT Kanpur)
-                      </p>
-                      <p class="description lead">
-                        Prateek Kumar is good at coding on top of that he has brilliant problem solving skills and his technology orientation is superb. His commitment in physical fitness is due to the continuity and focus he puts in everything he does. I had a chance to serve as his class representative which gave me a front row seat of seeing how dedicated he could be towards teamwork and creativity.
-                        Prateek’s ability to balance between academic work and other school activities is something that we should all strive to achieve.
-                      </p>
-                    </div>
-                  </div>
-                </div><!-- End testimonial item -->
-              </div>
-              <div class="swiper-pagination"></div>
-            </div>
-
-            <!-- <div id="testimonial-mf" class="owl-carousel owl-theme">
-          
-        </div> -->
+        <div class="strengths-grid">
+          <div class="strength-card">
+            <h4>Full-stack fluency</h4>
+            <p>Comfortable across the stack — from React front ends to Express/Node APIs to the SQL and pipeline
+              work that keeps data reliable underneath.</p>
+          </div>
+          <div class="strength-card">
+            <h4>Production GenAI experience</h4>
+            <p>Not just prototypes — I've built and maintained a RAG system in production, including the ingestion,
+              retrieval, and prompt-iteration cycle that makes LLM answers trustworthy.</p>
+          </div>
+          <div class="strength-card">
+            <h4>Data engineering fundamentals</h4>
+            <p>Hands-on with Spark, Hive, and Hadoop for ETL — I understand how data actually moves and breaks at
+              scale, not just how to call an API.</p>
+          </div>
+          <div class="strength-card">
+            <h4>Strong CS fundamentals</h4>
+            <p>500+ solved problems on LeetCode and a B.Tech grounding in DSA, DBMS, and OS — the fundamentals that
+              make debugging and system design faster.</p>
+          </div>
+          <div class="strength-card">
+            <h4>Fast ramp-up</h4>
+            <p>Went from intern to full-time engineer within a year by shipping a real production system — I learn
+              fast and I ship.</p>
+          </div>
+          <div class="strength-card">
+            <h4>Clear communication</h4>
+            <p>I write code and documentation for the next person reading it, and I'd rather flag a blocker early
+              than surprise you with one later.</p>
           </div>
         </div>
       </div>
-    </div><!-- End Testimonials Section -->
+    </section>
 
-
-
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route"
-      style="background-image: url(assets/img/nits.jpg)">
-      <div class="overlay-mf"></div>
+    <!-- ===== Contact ===== -->
+    <section class="contact" id="contact">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-12">
-            <div class="contact-mf">
-              <div id="contact" class="box-shadow-full">
-                <div class="row">
-                  <div class="col-md-6">
-                    <div class="title-box-2">
-                      <h5 class="title-left">
-                        Send Message Us
-                      </h5>
-                    </div>
-                    <div>
-                      <form action="https://formspree.io/f/mrgnwqkg" method="post" >
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject"
-                                required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message"
-                                required></textarea>
-                            </div>
-                          </div>
-                          
-                          <div class="col-md-12 text-center mt-3">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
-                          </div>
-                        </div>
-                      </form>
-                    </div>
-                  </div>
-                  <div class="col-md-6">
-                    <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
-                        Get in Touch
-                      </h5>
-                    </div>
-                    <div class="more-info">
-                      <p class="lead">
-                        Feel free to contact me
-                      </p>
-                      <ul class="list-ico">
-                        <li><span class="bi bi-geo-alt"></span> 272302, Basti, Uttar Pradesh</li>
-                        <li><span class="bi bi-phone"></span> 6391837992</li>
-                        <li><span class="bi bi-envelope"></span> kumarprateek1833@gmail.com</li>
-                      </ul>
-                    </div>
-                    <div class="socials">
-                      <ul>
-                        <li><a href="https://x.com/024_Prateek?t=2vq53dEx9ERsGg2_hk-UTg&s=09"><span
-                              class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
-                        <li><a
-                            href="https://www.linkedin.com/in/prateek-kumar-342a98312/"><span
-                              class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
-                        <li><a href="https://github.com/prateek1833">
-                            <span class="ico-circle"><i class="bi bi-github"></i></span></a></li>
-                            <li>
-                              <a href="https://leetcode.com/u/Prateek_Kumar_24/">
-                                <span class="ico-circle">
-                                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRCVJWEpKksJQJwrTDUHRTAKYdOVLgMwm_sZA&s" alt="LeetCode" style="width: 24px; height: 24px;">
-                                </span>
-                              </a>
-                            </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
+        <p class="eyebrow mono">/contact</p>
+        <h2 class="section-title">Let's work together.</h2>
+        <p class="section-sub">Open to full-time roles and select freelance projects. I usually respond within
+          24–48 hours.</p>
+
+        <div class="contact-grid">
+          <form class="contact-form" id="contactForm" action="https://formspree.io/f/mrgnwqkg" method="POST">
+            <div class="form-row">
+              <div class="form-field">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required placeholder="Your name">
+              </div>
+              <div class="form-field">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required placeholder="you@company.com">
               </div>
             </div>
+            <div class="form-field">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" required placeholder="What's this about?">
+            </div>
+            <div class="form-field">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" required placeholder="Tell me about the role or project..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary form-submit">
+              <span class="submit-text">Send Message</span>
+            </button>
+            <p class="form-status mono" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+
+          <div class="contact-info">
+            <a href="mailto:kumarprateek1833@gmail.com" class="contact-info-row">
+              <span class="mono">email</span>
+              <span>kumarprateek1833@gmail.com</span>
+            </a>
+            <a href="tel:+916391837992" class="contact-info-row">
+              <span class="mono">phone</span>
+              <span>+91 63918 37992</span>
+            </a>
+            <div class="contact-info-row">
+              <span class="mono">location</span>
+              <span>Bengaluru, India</span>
+            </div>
+            <a href="https://www.linkedin.com/in/prateek-kumar-342a98312/" target="_blank" rel="noopener" class="contact-info-row">
+              <span class="mono">linkedin</span>
+              <span>/in/prateek-kumar</span>
+            </a>
+            <a href="https://github.com/prateek1833" target="_blank" rel="noopener" class="contact-info-row">
+              <span class="mono">github</span>
+              <span>/prateek1833</span>
+            </a>
+            <a href="https://leetcode.com/u/Prateek_Kumar_24/" target="_blank" rel="noopener" class="contact-info-row">
+              <span class="mono">leetcode</span>
+              <span>/Prateek_Kumar_24</span>
+            </a>
           </div>
         </div>
       </div>
-    </section><!-- End Contact Section -->
+    </section>
 
-  </main><!-- End #main -->
+  </main>
 
-  <!-- ======= Footer ======= -->
-  <footer>
-    <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="copyright-box">
-            <p class="copyright">&copy; Portfolio <strong>Prateek Kumar</strong>. All Rights Reserved</p>
-            <div class="credits">
-
-            </div>
-          </div>
-        </div>
+  <!-- ===== Footer ===== -->
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <a href="#top" class="nav-logo">PK<span class="nav-logo-dot">.</span></a>
+      <nav class="footer-links">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="footer-socials">
+        <a href="https://github.com/prateek1833" target="_blank" rel="noopener" aria-label="GitHub">GitHub</a>
+        <a href="https://www.linkedin.com/in/prateek-kumar-342a98312/" target="_blank" rel="noopener" aria-label="LinkedIn">LinkedIn</a>
+        <a href="assets/Prateek_Kumar_Resume.pdf" download aria-label="Resume">Resume</a>
       </div>
     </div>
-  </footer><!-- End  Footer -->
+    <div class="container">
+      <p class="footer-copy mono">© 2026 Prateek Kumar. Built from scratch, no template.</p>
+    </div>
+  </footer>
 
-  <div id="preloader"></div>
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
-      class="bi bi-arrow-up-short"></i></a>
+  <a href="#top" class="back-to-top" id="backToTop" aria-label="Back to top">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/typed.js/typed.umd.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
+  <script src="js/main.js"></script>
 
 </body>
-
 </html>
